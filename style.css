@@ -1,0 +1,115 @@
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+body{
+    font-family: "Mate SC", serif;
+    background: linear-gradient(45deg,#D8EFD3,#95D2B3,#55AD9B,#F1F8E8);
+}
+.title{
+    margin: 0 auto;
+    width: max-content;
+}
+.title p{
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+}
+.title p::after{
+    content: "";
+    background: linear-gradient();
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(45deg,#F8EDED,#FF8225,#B43F3F)
+}
+.main{
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4,230px);
+}
+img{
+    height: 100px;
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+.textTitle{
+   text-decoration: underline;
+   font-weight: bold;
+   text-align: center;
+}
+.textContent{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.textstyle{
+    text-align: center;
+}
+.divcolor{
+    margin-top: 20px;
+    height: 100px;
+    background: green;
+}
+button{
+    width: 150px;
+    height: 45px;
+    border-radius: 20px;   
+    font-family: "Mate SC", serif;
+}
+button:hover{
+    border: 0;
+    background: linear-gradient(45deg,cyan,lime);
+}
+.buttonCenter{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+.footer{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.footer p{
+    margin: 0;
+    font-size: 1.5rem;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: white;
+    font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+    .title p{
+        font-size: 1.5rem;
+    }
+    .main{
+        font-size: 1.2rem;
+        display: flex;
+        flex-flow: column wrap;
+
+    }
+    .textContent{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    button{
+        height: 35px;
+        width: 30%;
+        min-width: 110px;
+        border-radius: 20px;   
+        margin-top: 10px;
+    }
+    .footer p{
+        font-size: 1.2rem;
+    }
+}
+
